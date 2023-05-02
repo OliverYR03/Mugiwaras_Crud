@@ -8,7 +8,6 @@ import org.springframework.data.repository.CrudRepository;
 import certus.edu.pe.modelo.Clientes;
 
 
-
 public interface ClientesRepositorio extends CrudRepository<Clientes, Integer> {
 
 	@Query(value = "SELECT a FROM Clientes a WHERE a.nombre =?1")

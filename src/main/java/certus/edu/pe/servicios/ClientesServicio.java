@@ -13,7 +13,7 @@ import jakarta.transaction.Transactional;
 @Transactional
 public class ClientesServicio {
 	
-	@Autowired //Inyección de dependencia
+	@Autowired 
 	private ClientesRepositorio repositorio;
 	
 	public ClientesServicio(){

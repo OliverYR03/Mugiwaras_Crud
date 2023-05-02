@@ -25,6 +25,7 @@ import jakarta.persistence.Table;
 	, @NamedQuery(name  = "Clientes.findByTipopago", query = "SELECT p FROM Clientes p WHERE p.tipopago = :tipopago")
 })
 public class Clientes implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
