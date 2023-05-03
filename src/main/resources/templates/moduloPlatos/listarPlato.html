@@ -25,7 +25,10 @@
 		          <a class="nav-link" th:href="@{/clientes/listarCliente}">Clientes</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link disabled">Disabled</a>
+		          <a class="nav-link" th:href="@{/ordenes/listarOrdenes}">Ordenes</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" th:href="@{/opiniones/listarOpinion}">Reseñas</a>
 		        </li>
 		      </ul>
 		    </div>
@@ -37,13 +40,13 @@
 	
       <div class="container">
 		  <br>
-        <h1>🍲 PLATOS 🍲</h1>
+        <h1>🍲 LISTA DE PLATOS 🍲</h1>
         <br>
 		<a class="btn btn-success" th:href="@{/platos/nuevo}">NUEVO</a>
 		<br>
 		</br>
         <div class="row">            
-            <table class="table table-bordered" id="tablaPacientes">
+            <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th>Id</th>
