@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Nuevo Personal</title>
+	</head>
+	<body>
+		
+	<div align="center">	
+		<h1>Nuevo Personal</h1>
+		<form action="#" th:action="@{/personal/guardar}" th:object="${personal}" method="post">
+			<table border="0" cellpadding="10">
+				
+				<tr>
+					<td>Nombre:</td>
+					<td><input type="text" th:field="*{nombre}" /></td>
+				</tr>
+				
+				<tr>
+					<td>DNI:</td>
+					<td><input type="text" th:field="*{dni}" /></td>
+				</tr>
+				
+				<tr>
+					<td>Cargo:</td>
+					<td><input type="text" th:field="*{cargo}" /></td>
+				</tr>
+				
+				<tr>
+					<td>Imagen:</td>
+					<td><input type="text" th:field="*{imagen}" /></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><button type="submit"> Save </button></td>
+				</tr>		
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
